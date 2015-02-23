@@ -8,3 +8,23 @@
         border-style: none;
         border-color: none;
     }
+    
+    .red {
+        background-color: #FF3333;
+    }
+    
+    .blue {
+        background-color: #3333FF;
+    }
+    
+    .green {
+        background-color: #66FF33;
+    }
+    
+    .yellow {
+        background-color: #FFFF33;
+    }
+    
+    .purple {
+        background-color: #FF00FF;
+    }
