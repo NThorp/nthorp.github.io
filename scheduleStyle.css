@@ -18,7 +18,7 @@
     }
     
     .green {
-        background-color: #66FF33;
+        background-color: #00FF00;
     }
     
     .yellow {
@@ -35,4 +35,8 @@
     
     .pink {
         background-color: #FF00FF;
+    }
+
+    .teal {
+        background-color: #00FFCC;
     }
