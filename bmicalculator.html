@@ -3,20 +3,22 @@
   <title>BMI Calculator</title>
   
   <body>
-    <h3>Enter height in inches:</h3>
-    <input type = "text" id = "heightbox">
-    <h3>Enter weight in pounds:</h3>
-    <input type = "text" id = "weightbox">
-    <button onClick = "calculate();">Calculate BMI</button>
+    <h3>BMI Calculator</h3>
+    <h5>Slide the scales below:</h3>
+    <label for = "slider">Height</label>
+    <input type = "range" min = 48 max = 84 id = "heightslider" onmousemove = "change()" value = 48>
+    <label for = "slider">Weight</label>
+    <input type = "range" min = 80 max = 600 id = "weightslider" onmousemove = "change()" value = 80>
     <h3 id = "output"></h3>
+    <h3 id = "outputweight"></h3>
     
     <script>
-      calculate = function() {
-        heightbox = document.querySelector("#heightbox");
-        inputheight = heightbox.value;
+      change = function() {
+        sliderheight = document.querySelector("#heightslider");
+        inputheight = sliderheight.value;
         
-        weightbox = document.querySelector("#weightbox");
-        inputweight = weightbox.value;
+        sliderweight = document.querySelector("#weightslider");
+        inputweight = sliderweight.value;
         
         bmi = (inputweight * 703) / (inputheight * inputheight);
         
