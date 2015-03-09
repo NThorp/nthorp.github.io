@@ -1,0 +1,29 @@
+<html>
+
+  <title>BMI Calculator</title>
+  
+  <body>
+    <h3>Enter height in inches:</h3>
+    <input type = "text" id = "heightbox">
+    <h3>Enter weight in pounds:</h3>
+    <input type = "text" id = "weightbox">
+    <button onClick = "calculate();">Calculate BMI</button>
+    <h3 id = "output"></h3>
+    
+    <script>
+      calculate = function() {
+        heightbox = document.querySelector("#heightbox");
+        inputheight = heightbox.value;
+        
+        weightbox = document.querySelector("#weightbox");
+        inputweight = weightbox.value;
+        
+        bmi = (weight * 703) / (height * height);
+        
+        outputh3 = document.querySelector("#output");
+        outputh3.innerHTML = "Body Mass Index = " + bmi;
+      }
+    </script>
+  </body>
+  
+</html>
