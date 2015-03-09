@@ -3,17 +3,20 @@
   <title>Temperature Converter</title>
   
   <body>
+    <h3>Enter temperature in degrees celsius:</h3>
     <input type = "text" id = "tempbox">
     <button onClick = "conversion();">Convert</button>
-    <h1 id = "output"></h1>
+    <h3 id = "output"></h3>
     
     <script>
       conversion = function() {
         inputbox = document.querySelector("#tempbox");
         inputtemp = inputbox.value;
         
-        outputh1 = document.querySelector("#output");
-        outputh1.innerHTML = "Hello" + inputtemp;
+        finaltemp = inputtemp * 1.8 + 32;
+        
+        outputh3 = document.querySelector("#output");
+        outputh3.innerHTML = finaltemp;
       }
     </script>
   </body>
