@@ -2,6 +2,12 @@
 
 <title>Address Book Assignment</title>
 
+<style>
+  table, th, td {
+    border: 2px solid black;
+}
+</style>
+
 <body>
 
 <h3>Adress Book</h3>
@@ -13,6 +19,7 @@
   <input type = "text" id = "emailinput"><br>
   Phone Number:<br>
   <input type = "text" id = "phoneinput"><br>
+  <button onclick = "add()">Add Data</button>
   
   <table id = "book">
     <tr>
@@ -25,14 +32,29 @@
 
 <script>
 
-  namebox = document.querySelector("#nameinput");
-  name = namebox.value;
+  add = functin() {
+    
+    namebox = document.querySelector("#nameinput");
+    name = namebox.value;
   
-  emailbox = document.querySelector("#emailinput");
-  email = emailbox.value;
+    emailbox = document.querySelector("#emailinput");
+    email = emailbox.value;
   
-  phonebox = document.querySelector("#phoneinput");
-  phone = phonebox.value;
+    phonebox = document.querySelector("#phoneinput");
+    phone = phonebox.value;
+    
+    thetable = document.querySelector("#book");
+    
+    newrow = thetable.insertRow();
+    namecell = newrow.insertCell(0);
+    emailcell = newrow.insertCell(1);
+    phonecell = newrow.insertCell(2);
+    
+    namecell.innerHTML = name;
+    emailcell.innerHTML = email;
+    phonecell.innerHTML = phone;
+    
+  }
 
 </script>
 
