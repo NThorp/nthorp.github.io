@@ -53,9 +53,9 @@
     testh3.innerHTML = name;
     
     newrow = thetable.insertRow();
-    namecell = thetable.insertCell();
-    emailcell = table.insertCell();
-    phonecell = table.insertCell();
+    namecell = newrow.insertCell();
+    emailcell = newrow.insertCell();
+    phonecell = newrow.insertCell();
     
     namecell.innerHTML = name;
     emailcell.innerHTML = email;
