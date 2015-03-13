@@ -12,6 +12,7 @@
     <h3 id = "heightoutput"></h3>
     <h3 id = "weightoutput"></h3>
     <h3 id = "output"></h3>
+    <h3 id = "output2"></h3>
     
     <script>
       change = function() {
@@ -31,6 +32,19 @@
         
         outputh3 = document.querySelector("#output");
         outputh3.innerHTML = "Body Mass Index = " + bmi;
+        
+        outputh32 = document.querySelector("#output2");
+        if (bmi > 24) {
+          outputh32.innerHTML = "Too High";
+        } else {
+          if (bmi < 19) {
+            outputh32.innerHTML = "Too Low";
+          } else {
+            outputh32.innerHTML = "Ok";
+          }
+        }
+        
+        
       }
     </script>
   </body>
