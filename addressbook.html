@@ -7,15 +7,32 @@
 <h3>Adress Book</h3>
 
 <form>
-Name:<br>
-<input type = "text" id = "nameinput">
-Email:<br>
-<input type = "text" id = "emailinput">
-Phone Number:<br>
-<input type = "text" id = "phoneinput">
+  Name:<br>
+  <input type = "text" id = "nameinput"><br>
+  Email:<br>
+  <input type = "text" id = "emailinput"><br>
+  Phone Number:<br>
+  <input type = "text" id = "phoneinput"><br>
+  
+  <table id = "book">
+    <tr>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Phone</th>
+    </tr>
+  </table>
 </form>
 
 <script>
+
+  namebox = document.querySelector("#nameinput");
+  name = namebox.value;
+  
+  emailbox = document.querySelector("#emailinput");
+  email = emailbox.value;
+  
+  phonebox = document.querySelector("#phoneinput");
+  phone = phonebox.value;
 
 </script>
 
