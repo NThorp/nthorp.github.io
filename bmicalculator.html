@@ -28,7 +28,7 @@
         outputweight = document.querySelector("#weightoutput");
         outputweight.innerHTML = "Weight = " + inputweight + " pounds";
         
-        bmi = (inputweight * 703) / (inputheight * inputheight);
+        bmi = inputweight / (inputheight * inputheight) * 703;
         
         outputh3 = document.querySelector("#output");
         outputh3.innerHTML = "Body Mass Index = " + bmi;
