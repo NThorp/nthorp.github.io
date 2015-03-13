@@ -15,7 +15,7 @@
 
 <h3>Adress Book</h3>
 <h3 id = "test"></h3>
-<h3>hi1</h3>
+<h3>hi2</h3>
 
 <form>
   Name:<br>
@@ -53,9 +53,9 @@
     testh3.innerHTML = name;
     
     newrow = thetable.insertRow();
-    namecell = newrow.insertCell();
-    emailcell = newrow.insertCell();
-    phonecell = newrow.insertCell();
+    namecell = thetable.insertCell();
+    emailcell = table.insertCell();
+    phonecell = table.insertCell();
     
     namecell.innerHTML = name;
     emailcell.innerHTML = email;
