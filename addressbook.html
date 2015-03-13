@@ -46,9 +46,9 @@
     thetable = document.querySelector("#book");
     
     newrow = thetable.insertRow();
-    namecell = newrow.insertCell(0);
-    emailcell = newrow.insertCell(1);
-    phonecell = newrow.insertCell(2);
+    namecell = newrow.insertCell();
+    emailcell = newrow.insertCell();
+    phonecell = newrow.insertCell();
     
     namecell.innerHTML = name;
     emailcell.innerHTML = email;
