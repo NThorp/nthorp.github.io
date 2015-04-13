@@ -1,0 +1,32 @@
+<html>
+
+<title>To Do List Assignment</title>
+
+<body>
+
+<h3>To Do List:</h3>
+
+<input type = "text" id = "taskinput">
+
+<table id = "listtable">
+
+<script>
+
+  add = function() {
+  
+  taskbox = document.querySelector("#taskinput");
+  task = taskbox.value;
+  
+  thetable = document.querySelector("#listtable")
+  therow = document.createElement("tr")
+  thedata = document.createElement("td")
+  contents = document.createTextNode(task)
+  thedata.appendChild(contents)
+  therow.appendChild(thedata)
+  thetable.appendChild(therow)
+  
+  }
+
+</body>
+
+</html>
