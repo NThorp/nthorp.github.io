@@ -46,11 +46,13 @@
     phonebox = document.querySelector("#phoneinput");
     phone = phonebox.value;
     
-    thetable = document.querySelector("#book");
-    testh3 = document.querySelector("#test");
-    tr1 = thetable.createElement("tr");
-    td1 = thetable.createElement("td");
-    td1.innerHTML = name;
+    thetable = document.querySelector("#book")
+    trow = document.createElement("tr")
+    td = document.createElement("td")
+    contents = document.createTextNode(name)
+    td.appendChild(contents)
+    trow.appendChild(td)
+    thetable.appendChild(trow)
     
   }
 
