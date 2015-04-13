@@ -48,10 +48,18 @@
     
     thetable = document.querySelector("#book")
     trow = document.createElement("tr")
-    td = document.createElement("td")
-    contents = document.createTextNode(name)
-    td.appendChild(contents)
-    trow.appendChild(td)
+    td1 = document.createElement("td")
+    contents1 = document.createTextNode(name)
+    td1.appendChild(contents1)
+    trow.appendChild(td1)
+    td2 = document.createElement("td")
+    contents2 = document.createTextNode(email)
+    td2.appendChild(contents2)
+    trow.appendChild(td2)
+    td3 = document.createElement("td")
+    contents3 = document.createTextNode(phone)
+    td3.appendChild(contents3)
+    trow.appendChild(td3)
     thetable.appendChild(trow)
     
   }
