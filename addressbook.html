@@ -13,7 +13,7 @@
 
 <body>
 
-<h3>Adress Book</h3>
+<h3>Address Book</h3>
 <h3 id = "test"></h3>
 
   Name:<br>
@@ -47,6 +47,8 @@
     
     thetable = document.querySelector("#book");
     testh3 = document.querySelector("#test");
+    td1 = thetable.createElement("td");
+    td1.innerHTML = name;
     testh3.innerHTML = name;
     
   }
