@@ -44,11 +44,13 @@
   task = taskbox.value;
   
   prioritybox = document.querySelector("#priorityinput");
-  priority = taskbox.value;
+  priority = prioritybox.value;
   
   var currentTask = "Enter Task";
   
-  
+  if (priority = "High") {
+    currentTask = task;
+  }
   
   thetable = document.querySelector("#listtable");
   therow = document.createElement("tr");
