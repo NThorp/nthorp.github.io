@@ -24,7 +24,7 @@
 
 <input type = "text" id = "taskinput" value = "Enter Task">
 
-<select id="priorityinput" onclick = "changepriority">
+<select id="priorityinput">
     <option>High</option>
     <option>Medium</option>
     <option>Low</option>
@@ -51,23 +51,23 @@
 
   add = function() {
   
-  taskbox = document.querySelector("#taskinput");
-  task = taskbox.value;
+    taskbox = document.querySelector("#taskinput");
+    task = taskbox.value;
   
-  var currentTask = "Enter Task";
+    var currentTask = "Enter Task";
   
-  var priority = priorityVal;
+    var priority = priorityVal;
   
-  if (priority = "High") {
-  }
+    if (priority = "High") {
+    }
   
-  thetable = document.querySelector("#listtable");
-  therow = document.createElement("tr");
-  thedata = document.createElement("td");
-  contents = document.createTextNode(priority);
-  thedata.appendChild(contents);
-  therow.appendChild(thedata);
-  thetable.appendChild(therow);
+    thetable = document.querySelector("#listtable");
+    therow = document.createElement("tr");
+    thedata = document.createElement("td");
+    contents = document.createTextNode(priorityVal);
+    thedata.appendChild(contents);
+    therow.appendChild(thedata);
+    thetable.appendChild(therow);
   
   }
 
