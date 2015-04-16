@@ -1,4 +1,21 @@
 <html>
+    
+<head>
+    <style type=text>
+    
+        .highpriority {
+            color: red;
+        }
+        
+         .medpriority {
+            color: yellow;
+        }
+        
+         .lowpriority {
+            color: green;
+        }
+    </style>
+</head>
 
 <title>To Do List Assignment</title>
 
@@ -8,7 +25,7 @@
 
 <input type = "text" id = "taskinput">
 <button onclick = "add()">Add Task</button>
-<select id="priority">
+<select id="priorityinput">
     <option>High</option>
     <option>Medium</option>
     <option>Low</option>
@@ -21,9 +38,16 @@
 <script>
 
   add = function() {
+      
+  prioritybox = document.querySelector("priorityinput");
+  priority = prioritybox.value;
   
   taskbox = document.querySelector("#taskinput");
   task = taskbox.value;
+  
+  if (priority = "High") {
+      
+  }
   
   thetable = document.querySelector("#listtable");
   therow = document.createElement("tr");
