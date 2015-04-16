@@ -22,7 +22,7 @@
 
 <h3>To Do List:</h3>
 
-<input type = "text" id = "taskinput">
+<input type = "text" id = "taskinput" value = "Enter Task">
 <button onclick = "add()">Add Task</button>
 
 
@@ -36,7 +36,9 @@
   taskbox = document.querySelector("#taskinput");
   task = taskbox.value;
   
-  var currentTask = "WWWWW";
+  var currentTask = "Enter Task";
+  
+  
   
   thetable = document.querySelector("#listtable");
   therow = document.createElement("tr");
