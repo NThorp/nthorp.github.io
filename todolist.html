@@ -24,7 +24,7 @@
 
 <input type = "text" id = "taskinput" value = "Enter Task">
 
-<select id="priorityinput">
+<select id="priorityinput" onclick = "changepriority">
     <option>High</option>
     <option>Medium</option>
     <option>Low</option>
@@ -38,15 +38,25 @@
 
 <script>
 
+  var currentTask = "Enter Task";
+  var priorityVal;
+
+  changepriority = function() {
+    
+      prioritybox = document.querySelector("#priorityinput");
+      priorityVal = prioritybox.value;
+      
+      
+  }
+
   add = function() {
   
   taskbox = document.querySelector("#taskinput");
   task = taskbox.value;
   
-  prioritybox = document.querySelector("#priorityinput");
-  priority = prioritybox.value;
-  
   var currentTask = "Enter Task";
+  
+  var priority = priorityVal;
   
   if (priority = "High") {
   }
