@@ -23,6 +23,13 @@
 <h3>To Do List:</h3>
 
 <input type = "text" id = "taskinput" value = "Enter Task">
+
+<select id="priority">
+    <option>High</option>
+    <option>Medium</option>
+    <option>low</option>
+</select>
+
 <button onclick = "add()">Add Task</button>
 
 
@@ -34,6 +41,9 @@
   add = function() {
   
   taskbox = document.querySelector("#taskinput");
+  task = taskbox.value;
+  
+  prioritybox = document.querySelector("#priorityinput");
   task = taskbox.value;
   
   var currentTask = "Enter Task";
