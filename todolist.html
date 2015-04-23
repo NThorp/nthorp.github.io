@@ -60,7 +60,7 @@
     therow = document.createElement("tr");
     thedata = document.createElement("td");
     contents = document.createTextNode(priorityVal);
-    document.getElementById("contents").className = "highpriority";
+    contents.className = "highpriority";
     thedata.appendChild(contents);
     therow.appendChild(thedata);
     thetable.appendChild(therow);
