@@ -3,15 +3,15 @@
 <style>
 
     .highpriority {
-      text-color: red;
+      color: red;
     }
     
     .medpriority {
-      text-color: red;
+      color: red;
     }
     
     .lowpriority {
-      text-color: red;
+      color: red;
     }
     
 </style>
@@ -60,6 +60,7 @@
     therow = document.createElement("tr");
     thedata = document.createElement("td");
     contents = document.createTextNode(priorityVal);
+    document.getElementById("contents").className = "highpriority";
     thedata.appendChild(contents);
     therow.appendChild(thedata);
     thetable.appendChild(therow);
