@@ -25,9 +25,9 @@
 <input type = "text" id = "taskinput" value = "Enter Task">
 
 <select id="priorityinput">
-    <option>Low</option>
-    <option>Medium</option>
     <option>High</option>
+    <option>Medium</option>
+    <option>Low</option>
 </select>
 
 <button onclick = "add()">Add Task</button>
@@ -55,9 +55,11 @@
     contents = document.createTextNode(task);
     if (prioritybox.value = "High") {
       thedata.style.color = "red";
-    } else if (prioritybox.value = "Medium") {
+    }
+    if (prioritybox.value = "Medium") {
       thedata.style.color = "yellow";
-    } else {
+    }
+    if (prioritybox.value = "Low") {
       thedata.style.color = "green";
     }
     thedata.style.color = "red";
