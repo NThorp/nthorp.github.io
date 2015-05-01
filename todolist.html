@@ -48,23 +48,18 @@
     
     prioritybox = document.querySelector("#priorityinput");
     priorityVal = prioritybox.value;
-    
-    //--if (prioritybox.value = "High") {
-      //task.style.color = "red";
-    //} else if (prioritybox.value = "Medium") {
-      //task.style.color = "yellow";
-    //} else {
-     //task.style.color = "green";
-    //}
-  
-    var currentTask = "Enter Task";
-  
-    var priority = priorityVal;
   
     thetable = document.querySelector("#listtable");
     therow = document.createElement("tr");
     thedata = document.createElement("td");
     contents = document.createTextNode(task);
+    if (prioritybox.value = "High") {
+      thedata.style.color = "red";
+    } else if (prioritybox.value = "Medium") {
+      thedata.style.color = "yellow";
+    } else {
+      thedata.style.color = "green";
+    }
     thedata.style.color = "red";
     thedata.appendChild(contents);
     therow.appendChild(thedata);
