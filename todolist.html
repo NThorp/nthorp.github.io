@@ -48,13 +48,18 @@
     
     prioritybox = document.querySelector("#priorityinput");
     priorityVal = prioritybox.value;
+    
+    if (prioritybox.value = "High") {
+      task.style.color = "red";
+    } else if (prioritybox.value = "Medium") {
+      task.style.color = "yellow";
+    } else {
+      task.style.color = "green";
+    }
   
     var currentTask = "Enter Task";
   
     var priority = priorityVal;
-  
-    if (priorityVal = "High") {
-    }
   
     thetable = document.querySelector("#listtable");
     therow = document.createElement("tr");
