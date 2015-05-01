@@ -53,14 +53,14 @@
     therow = document.createElement("tr");
     thedata = document.createElement("td");
     contents = document.createTextNode(task);
+    if (prioritybox.value = "Low") {
+      thedata.style.color = "green";
+    }
     if (prioritybox.value = "High") {
       thedata.style.color = "red";
     }
     if (prioritybox.value = "Medium") {
       thedata.style.color = "yellow";
-    }
-    if (prioritybox.value = "Low") {
-      thedata.style.color = "green";
     }
     thedata.style.color = "red";
     thedata.appendChild(contents);
