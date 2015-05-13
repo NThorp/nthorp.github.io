@@ -55,12 +55,10 @@
     contents = document.createTextNode(task);
     if (priorityVal = "Low") {
       thedata.style.color = "green";
-    }
-    if (priorityVal = "High") {
+    } else if (priorityVal = "High") {
       thedata.style.color = "red";
-    }
-    if (priorityVal = "Medium") {
-      thedata.style.color = "green";
+    } else if (priorityVal = "Medium") {
+      thedata.style.color = "yellow;
     }
     thedata.appendChild(contents);
     therow.appendChild(thedata);
